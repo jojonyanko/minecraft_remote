@@ -25,6 +25,7 @@ GOLD_BLOCK = 41
 IRON_BLOCK = 42
 GLOWSTONE = 89
 SEA_LANTERN_BLOCK = GLOWSTONE  # not available in MCPI
+LIVE = 6
 
 # some good blocks for grid like patterns you can count blocks easily
 GLASS = 20
