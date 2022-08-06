@@ -50,4 +50,6 @@ display1.update(msg, block_letters=param.GOLD_BLOCK)
 mc.postToChat(msg)
 
 time.sleep(4)
-display1.delete()
+# display1.delete(
+
+mc.postToChat("hello demo2")
