@@ -88,4 +88,4 @@ for i in range(5):
     x += 1
     y += 1
 
-make_kansito.make_kannsito(mc, x=-1)
+make_kansito.make_kannsito(mc, x= -1, z= -1)
