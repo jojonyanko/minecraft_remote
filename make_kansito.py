@@ -18,3 +18,38 @@ def make_kannsito(mc, x=1, z=1, y=76, sityuublock=param.GLOWSTONE, kahenblock=pa
     mc.setBlocks(x * 29,y+5,z * 29,x * 15,y+5,z * 15, blocktipe_zyouhen)
     mc.setBlocks(x * 28,y+5,z * 28,x * 16,y+5,z * 16, kudow)
     mc.setBlocks(x * 28,y+6,z * 28,x * 16,y+6,z * 16, blocktipe_zyouhen)
+
+def make_honto(mc,x= 10,y=100,z= 10,tyusinblock=param.GOLD_BLOCK):
+    blocktipe_tyuusin = tyusinblock
+
+    mc.setBlocks(x,1,z,-x,y,-z,param.GLASS)
+    mc.setBlocks(x-1,1,z-1,-(x-1),y-1,-(z-1),blocktipe_tyuusin)
+
+def make_kaidow(mc,x=49,y=1,z=4,y_plas=20,kaidowblock=param.GLASS):
+    blocktipe_kaidow=kaidowblock
+    for i in range(6):
+        
+        mc.setBlocks(x, y ,-z,-x,y + 7,z,blocktipe_kaidow)
+        mc.setBlocks(x, y + 1 ,-(z - 2),-x,y + 6,z - 2,param.AIR)
+
+        mc.setBlocks(-z, y ,x,z,y + 7,-x,blocktipe_kaidow)
+        mc.setBlocks(-(z - 2), y + 1 ,x,z - 2,y + 6,-x,param.AIR)
+        mc.setBlocks(x, y + 1 ,-(z - 2),-x,y + 6,z - 2,param.AIR)
+
+        y += y_plas
+
+def make_outkaidan(mc,x=48,y=1,z=-5,outkaidanblock=param.GLASS):
+    blocktipe_outkaidan=outkaidanblock
+    use_y=y
+    for j in range(5):
+        use_x=x
+        use_z=z
+        for i in range(10):
+            mc.setBlocks(-use_x,use_y,use_z,-(use_x - 4),use_y + 1,use_z - 3,blocktipe_outkaidan)
+            use_y += 1
+            use_z -= 4
+
+        for i in range(10):
+            mc.setBlocks(-use_x,use_y,use_z,-(use_x - 4),use_y + 1,use_z - 3,blocktipe_outkaidan)
+            use_y += 1
+            use_x -= 5
