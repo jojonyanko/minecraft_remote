@@ -81,9 +81,9 @@ make_kansito.make_insidekaidan(mc)
 
 
 make_kansito.make_kannsito(mc, x= -1, z= -1)
-make_kansito.make_kannsito(mc, x=1, z=1, y=5)
+make_kansito.make_kannsito(mc, x=1, z=1)
 mc.postToChat("無駄無駄無駄無駄ぁあ！！無駄なんだよジョジョォォォ！！！")
-make_kansito.make_kannsito(mc, x= -1, Z=1)
+# make_kansito.make_kannsito(mc, x= -1, Z=1)
 mc.postToChat("ヤッタゼ")
-make_kansito.make_kannsito(mc, x=1, Z= -1)
+# make_kansito.make_kannsito(mc, x=1, Z= -1)
 mc.postToChat("御　和　離")
