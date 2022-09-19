@@ -43,38 +43,42 @@ make_kansito.make_outkaidan(mc)
 mc.setBlocks(-3,2,-3,3,100,3,param.AIR)
 mc.setBlocks(-2,100,-2,2,101,2,param.AIR)
 
-x = -3
-y = 1
-z = -3
+# x = -3
+# y = 1
+# z = -3
 
-for j in range(4):
-    for i in range(6):
-        mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
-        x += 1
-        y += 1
+# for j in range(4):
+#     for i in range(6):
+#         mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+#         x += 1
+#         y += 1
 
-    for i in range(6):
-        mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
-        z += 1
-        y += 1
+#     for i in range(6):
+#         mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+#         z += 1
+#         y += 1
 
-    for i in range(6):
-        mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
-        x -= 1
-        y += 1
+#     for i in range(6):
+#         mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+#         x -= 1
+#         y += 1
 
-    for i in range(6):
-        mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
-        z -= 1
-        y += 1
+#     for i in range(6):
+#         mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+#         z -= 1
+#         y += 1
 
-z += 1
-x += 1
+# z += 1
+# x += 1
 
-for i in range(5):
-    mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
-    x += 1
-    y += 1
+# for i in range(5):
+#     mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+#     x += 1
+#     y += 1
+
+
+make_kansito.make_insidekaidan(mc)
+
 
 make_kansito.make_kannsito(mc, x= -1, z= -1)
 make_kansito.make_kannsito(mc, x=1, z=1, y=5)

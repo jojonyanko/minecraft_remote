@@ -53,3 +53,45 @@ def make_outkaidan(mc,x=48,y=1,z=-5,outkaidanblock=param.GLASS):
             mc.setBlocks(-use_x,use_y,use_z,-(use_x - 4),use_y + 1,use_z - 3,blocktipe_outkaidan)
             use_y += 1
             use_x -= 5
+
+def make_insidekaidan_seihoukei_zyouhen(mc,x=-3,y=1,z=-3,insideblock_seihoukei_zyouhen=param.SEA_LANTERN_BLOCK):
+    blocktipe_insideblock_seihoukei_zyouhen = insideblock_seihoukei_zyouhen
+    use_x = x
+    use_y = y
+    use_z = z
+    for i in range(6):
+            mc.setBlock(use_x, use_y, use_z, blocktipe_insideblock_seihoukei_zyouhen)
+            use_x += 1
+            use_y += 1
+
+
+def make_insidekaidan(mc,x=-3,y=1,z=-3,insideblock=param.SEA_LANTERN_BLOCK):
+    blocktipe_insideblock=insideblock
+    use_x = x
+    use_y = y
+    use_z = z
+    for j in range(4):
+        make_insidekaidan_seihoukei_zyouhen(mc,x=use_x,y=use_y,z=use_z,insideblock_seihoukei_zyouhen=insideblock)
+
+        for i in range(6):
+            mc.setBlock(use_x, use_y, use_z, blocktipe_insideblock)
+            use_z += 1
+            use_y += 1
+
+        for i in range(6):
+            mc.setBlock(use_x, use_y, use_z, blocktipe_insideblock)
+            use_x -= 1
+            use_y += 1
+
+        for i in range(6):
+            mc.setBlock(use_x, use_y, use_z, blocktipe_insideblock)
+            use_z -= 1
+            use_y += 1
+    
+    z += 1
+    x += 1
+
+    for i in range(5):
+        mc.setBlock(x, y, z, param.SEA_LANTERN_BLOCK)
+        x += 1
+        y += 1
