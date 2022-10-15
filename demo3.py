@@ -8,8 +8,9 @@ import make_kansito
 
 mc = Minecraft.create(port=param.PORT_MC)  # MCJE:14712, MCPI:4711
 mc.postToChat("demo3")
-
 mc.postToChat("こんにちは！")
+
+mc.player.setPos(0, 1, 0)
 
 axis_flat.reset_minecraft_world(mc, width=50)
 mc.setBlocks(-50,1,-50,50,111,50,param.GLASS)
@@ -19,8 +20,6 @@ mc.setBlocks(-49,0,-49,49,200,49,param.AIR)
 
 
 make_kansito.make_honto(mc)
-
-mc.player.setPos(0, 1, 0)
 
 make_kansito.make_kaidow(mc)
 
