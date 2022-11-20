@@ -126,7 +126,7 @@ def make_insidekaidan_S(mc,x=-3,y=1,z=-3,dansu=6,insideblock=param.SEA_LANTERN_B
 
     make_insidekaidan_seihoukei_zyouhen(mc,x=use_x,y=use_y,z=use_z,dansu=dansu - 1,insideblock_seihoukei_zyouhen=insideblock)
 
-def make_insidekaidan_E(mc,x=-3,y=1,z=-3,dansu=6,insideblock=param.SEA_LANTERN_BLOCK):
+def make_insidekaidan_E(mc,x=3,y=1,z=-2,dansu=6,insideblock=param.SEA_LANTERN_BLOCK):
     blocktipe_insideblock=insideblock
     use_x = x
     use_y = y
