@@ -77,6 +77,7 @@ mc.setBlocks(-2,100,-2,2,101,2,param.AIR)
 
 
 make_kansito.make_insidekaidan_S(mc)
+
 make_kansito.make_insidekaidan_E(mc)
 
 
