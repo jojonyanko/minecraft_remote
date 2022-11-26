@@ -5,6 +5,7 @@ import param_MCJE as param
 
 import axis_flat
 import make_kansito
+import make_kaidan
 
 mc = Minecraft.create(port=param.PORT_MC)  # MCJE:14712, MCPI:4711
 mc.postToChat("demo3")
@@ -37,7 +38,7 @@ make_kansito.make_kaidow(mc)
 # #         y += 1
 # #         x -= 5
 
-make_kansito.make_outkaidan(mc)
+make_kaidan.make_outkaidan(mc)
 
 mc.setBlocks(-3,2,-3,3,100,3,param.AIR)
 mc.setBlocks(-2,100,-2,2,101,2,param.AIR)
@@ -76,10 +77,10 @@ mc.setBlocks(-2,100,-2,2,101,2,param.AIR)
 # #     y += 1
 
 
-make_kansito.make_insidekaidan_S(mc,)
+make_kaidan.make_insidekaidan_S(mc,)
 
 mc.postToChat("ハハッ")
-make_kansito.make_insidekaidan_E(mc)
+make_kaidan.make_insidekaidan_E(mc)
 mc.postToChat("なめんなよクソガキ")
 
 make_kansito.make_kannsito(mc, x= -16, z= -16)
