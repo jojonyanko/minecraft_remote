@@ -76,7 +76,7 @@ mc.setBlocks(-2,100,-2,2,101,2,param.AIR)
 # #     y += 1
 
 
-make_kansito.make_insidekaidan_S(mc)
+make_kansito.make_insidekaidan_S(mc,)
 
 mc.postToChat("ハハッ")
 make_kansito.make_insidekaidan_E(mc)
