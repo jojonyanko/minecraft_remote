@@ -84,6 +84,10 @@ mc.postToChat("ハハッ")
 make_insidekaidan.make_insidekaidan_E(mc,)
 mc.postToChat("なめんなよクソガキ")
 
+make_insidekaidan.make_insidekaidan_N(mc,)
+
+make_insidekaidan.make_insidekaidan_W(mc,)
+
 make_kansito.make_kannsito(mc, x= -16, z= -16)
 make_kansito.make_kannsito(mc, x=28, z=28)
 mc.postToChat("無駄無駄無駄無駄ぁあ！！無駄なんだよジョジョォォォ！！！")
